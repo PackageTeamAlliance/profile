@@ -1,0 +1,32 @@
+{
+    "name": "pta/profile",
+	"type": "core-module",
+	"authors": [
+		{
+			"name": "Package Team Alliance",
+			"email": "yj@packageteamalliance.com"
+		}
+	],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.packageteamalliance.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+           "database/migrations",
+           "database/seeders"
+        ],
+        "psr-4": {
+            "Pta\\Profile\\": "src/"
+        }
+    },
+    "require": {
+        "pta/composer-installer": "0.1.*"
+        
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    }
+}
