@@ -8,45 +8,45 @@ return [
      */
     'route_prefix' => config('core.admin_uri') . 'content',
 
-    'file_path'    =>  base_path('resources/content'),
+    'file_path'    =>  base_path('resources/profile'),
 
     /*
      * Default permission user should have to access the dashboard.
      */
     'security' => [
         'protected'          => true,
-        'middleware'         => ['web', 'access.routeNeedsPermission:manage-content'],
-        'permission_name'    => 'manage-content',
+        'middleware'         => ['web', 'access.routeNeedsPermission:manage-profile'],
+        'permission_name'    => 'manage-profile',
     ],
 
     'permissions' => [
         'view' => [
-            'name' => 'manage-content',
+            'name' => 'manage-profile',
             'display_name' => 'Manage Content'
         ],
         'create' => [
-            'name' => 'create-content',
+            'name' => 'create-profile',
             'display_name' => 'Create Content'
         ],
         'edit' => [
-            'name' => 'edit-content',
+            'name' => 'edit-profile',
             'display_name' => 'Edit Content'
         ],
         'delete' => [
-            'name' => 'delete-content',
+            'name' => 'delete-profile',
             'display_name' => 'Delete Content'
         ],
 
         'translation-create' => [
-            'name' => 'create-translation-content',
+            'name' => 'create-translation-profile',
             'display_name' => 'Create Content Translation'
         ],
         'translation-edit' => [
-            'name' => 'edit-translation-content',
+            'name' => 'edit-translation-profile',
             'display_name' => 'Edit Content Translation'
         ],
         'translation-delete' => [
-            'name' => 'delete-translation-content',
+            'name' => 'delete-translation-profile',
             'display_name' => 'Delete Content Translation'
         ],
     ],
