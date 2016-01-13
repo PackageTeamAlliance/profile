@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Content\Database\Seeders;
+namespace Pta\Profile\Database\Seeders;
 
 use DB;
 use Illuminate\Database\Seeder;
@@ -9,9 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\Content\Database\Seeders\DefaultTableSeeder;
 use Modules\Content\Database\Seeders\PermissionSeederTableSeeder;
 
-class ContentDatabaseSeeder extends Seeder
+class ProfileDatabaseSeeder extends Seeder
 {
-
     /**
      * Run the database seeds.
      *
@@ -22,7 +21,4 @@ class ContentDatabaseSeeder extends Seeder
         $this->call(DefaultTableSeeder::class);
         $this->call(PermissionSeederTableSeeder::class);
     }
-
-    
-
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Content\Database\Seeders;
+namespace Pta\Profile\Database\Seeders;
 
 use DB;
 use Guardian;
